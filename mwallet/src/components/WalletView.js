@@ -200,7 +200,7 @@ function WalletView({
   async function getAccountTokens() {
     setFetching(true);
 
-    const res = await axios.get(`http://localhost:3001/getTokens`, {
+    const res = await axios.get(`http://54.175.233.72:3001/getTokens`, {
       params: {
         userAddress: wallet,
         chain: selectedChain,
